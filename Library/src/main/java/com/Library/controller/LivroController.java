@@ -14,8 +14,8 @@ public class LivroController {
     LivroRepository livroRepository;
 
     @PostMapping
-    public Livro criar (@RequestBody Livro cliente) {
-        return livroRepository.save(cliente);
+    public Livro criar (@RequestBody Livro livro) {
+        return livroRepository.save(livro);
     }
 
     @GetMapping
